@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Gradient progress bar</h1>
+    <div class="box">
+      <div class="text">
+        <textarea
+          id="text"
+          type="text"
+          placeholder="Place to write something"
+          rows="4"
+          cols="50"
+          minlength="0"
+          maxlength="100"
+        ></textarea>
+        <span id="count-char">0 / 100</span>
+      </div>
+      <div id="bar" class="progress-bar">
+        <div id="progress-bg"></div>
+        <div class="percent">0%</div>
+      </div>
+    </div>
+  </body>
+</html>
