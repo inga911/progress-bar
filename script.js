@@ -5,7 +5,7 @@ const percent = document.querySelector('.percent')
 
 const limit = 100;
 
-text.addEventListener('input', () => {
+text.oninput = () => {
     const textLength = text.value.length;
     count.textContent = textLength + ' / ' + limit;
     const percentage = Math.round((textLength / limit) * 100);
@@ -26,4 +26,4 @@ text.addEventListener('input', () => {
     } else {
         progressBg.style.backgroundImage = 'linear-gradient(to top,rgba(253, 61, 61, 1), rgba(186, 0, 0, 1))';
     }
-});
+};
